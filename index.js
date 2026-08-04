@@ -1,10 +1,13 @@
-const prompt = require("prompt-sync")();
+import listarLivros from "./listarLivros.js"; 
+import PromptSync from "prompt-sync";
+
+const prompt = PromptSync();
 
 let menuEscolhido = '';
 let continuar = true;
 
 do {
-  menuEscolhido = prompt(`
+  console.log(`
     SISTEMA DE BIBLIOTECA
 
     1 - Listar livros
@@ -15,11 +18,20 @@ do {
     6 - Realizar devolução
     7 - Exibir estatísticas
     0 - Sair
-  `); 
+  `);
 
-  if (menuEscolhido === '0') {
-    continuar = false;
-    console.log('Saindo do sistema...');
+  menuEscolhido = prompt("Escolha uma opção do menu: "); 
+
+  switch (menuEscolhido) {
+    case '0':
+      continuar = false;
+      console.log('Saindo do sistema...');
+      break;
+    case '1':
+      listarLivros();
+      break;
+
+    default:
+      break;
   }
-
 } while (continuar);
