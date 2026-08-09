@@ -7,7 +7,8 @@ export default function listarLivros() {
       Autor: ${livro.autor}
       Categoria: ${livro.categoria}
       Número de páginas: ${livro.paginas}
-      Disponibilidade: ${livro.disponivel}
+      Disponibilidade: ${livro.disponivel ? "Disponível": "Indisponível"}
     `)
   });
 }
+
