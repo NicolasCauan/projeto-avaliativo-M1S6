@@ -2,14 +2,14 @@ export default class Livro {
   titulo;
   autor;
   categoria;
-  numeroPaginas;
-  disponibilidade;
+  paginas;
+  disponivel;
 
-  constructor(titulo, autor, categoria, numeroPaginas) {
+  constructor(titulo, autor, categoria, paginas) {
     this.titulo = titulo;
     this.autor = autor;
     this.categoria = categoria;
-    this.numeroPaginas = numeroPaginas;
-    this.disponibilidade = true;
+    this.paginas = paginas;
+    this.disponivel = true;
   }
 }
