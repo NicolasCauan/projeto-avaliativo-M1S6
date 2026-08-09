@@ -10,6 +10,8 @@ export default function buscarLivros(titulo) {
       Título: ${livro.titulo.toUpperCase()}
       Autor: ${livro.autor}
       Categoria: ${livro.categoria}
+      Número de páginas: ${livro.paginas}
+      Disponibilidade: ${livro.disponivel ? "Disponível": "Indisponível"}
     `)
   } else {
     console.log("Livro não encontrado! Por favor digite um título válido")
