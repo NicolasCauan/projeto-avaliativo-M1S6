@@ -1,6 +1,8 @@
+import PromptSync from "prompt-sync";
 import listarLivros from "./listarLivros.js";
 import buscarLivros from "./buscarLivros.js";
-import PromptSync from "prompt-sync";
+import listarDisponiveis from "./listarDisponiveis.js";
+
 
 const prompt = PromptSync();
 
@@ -39,7 +41,10 @@ do {
       let livroEscolhido = prompt("Que livro você deseja buscar? ");
       buscarLivros(livroEscolhido);
       break;
-
+    case '3':
+      listarDisponiveis();
+      break;
+      
     default:
       console.log('Opção inválida!')
       break;
