@@ -4,6 +4,7 @@ import buscarLivros from "./buscarLivros.js";
 import listarDisponiveis from "./listarDisponiveis.js";
 import cadastrarLivro from "./cadastrarLivro.js";
 import realizarEmprestimo from "./realizarEmprestimo.js";
+import realizarDevolucao from "./realizarDevolucao.js";
 
 
 const prompt = PromptSync();
@@ -53,6 +54,11 @@ do {
       let livroEmprestado = prompt("Que livro você deseja pegar emprestado? ");
       realizarEmprestimo(livroEmprestado);
       break;
+    case '6':
+      let livroDevolvido = prompt("Que livro você deseja devolver? ");
+      realizarDevolucao(livroDevolvido);
+      break;
+
     default:
       console.log('Opção inválida!')
       break;
