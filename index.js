@@ -2,6 +2,7 @@ import PromptSync from "prompt-sync";
 import listarLivros from "./listarLivros.js";
 import buscarLivros from "./buscarLivros.js";
 import listarDisponiveis from "./listarDisponiveis.js";
+import cadastrarLivro from "./cadastrarLivro.js";
 
 
 const prompt = PromptSync();
@@ -43,6 +44,9 @@ do {
       break;
     case '3':
       listarDisponiveis();
+      break;
+    case '4':
+      cadastrarLivro();
       break;
       
     default:
