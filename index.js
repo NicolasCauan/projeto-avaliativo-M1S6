@@ -5,6 +5,7 @@ import listarDisponiveis from "./listarDisponiveis.js";
 import cadastrarLivro from "./cadastrarLivro.js";
 import realizarEmprestimo from "./realizarEmprestimo.js";
 import realizarDevolucao from "./realizarDevolucao.js";
+import exibirEstatisticas from "./exibirEstatisticas.js";
 
 
 const prompt = PromptSync();
@@ -57,6 +58,9 @@ do {
     case '6':
       let livroDevolvido = prompt("Que livro você deseja devolver? ");
       realizarDevolucao(livroDevolvido);
+      break;
+    case '7':
+      exibirEstatisticas();
       break;
 
     default:
