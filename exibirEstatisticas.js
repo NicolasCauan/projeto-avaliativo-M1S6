@@ -22,7 +22,7 @@ export default function exibirEstatisticas() {
     Total de Livros Disponiveis: ${livrosDisponiveis}
     Total de Livros Indisponiveis: ${livrosIndisponiveis}
     Total de Paginas Considerando Todos os Livros: ${totalGeralPaginas}
-    Média de Páginas Por Livro: ${mediaPaginas} 
+    Média de Páginas Por Livro: ${mediaPaginas.toFixed(0)} 
     `)
 }
 
